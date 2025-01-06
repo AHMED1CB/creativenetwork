@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/programmers.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>CreativeNetwork</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="../../public/imgs/logo.png" alt="" />
+        </div>
+        <div class="nav-container">
+        <nav>
+          <a href="../../">Home</a>
+          <a class="Active" href="">Programmers</a>
+          <a href="">designers</a>
+          <a href="">About</a>
+        </nav>
+        <div class="btn-container">
+          <a href="">Login</a>
+        </div>
+      </div>
+      </div>
+    </header>
+
+    <section class="dev-hero">
+      <div class="container">
+        <div class="btns-active">
+          <button class="select-btns active" data-name="all">All</button>
+          <button class="select-btns" data-name="front">Front-End</button>
+          <button class="select-btns" data-name="back">Back-end</button>
+          <button class="select-btns" data-name="ui">Ui/Ux</button>
+          <button class="select-btns" data-name="game">Game dev</button>
+          <button class="select-btns" data-name="mobile">Mobile dev</button>
+        </div>
+        <div class="cards-container">
+          <!-- Frontend Technologies -->
+          <div class="cards" data-name="front">
+            <div class="card">
+              <div class="icon">
+                <i style="color: #e34c26" class="fab fa-html5"></i>
+              </div>
+              <div class="info">
+                <h1>HTML</h1>
+                <p>Skeleton of websites</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #1572b6" class="fab fa-css3-alt"></i>
+              </div>
+              <div class="info">
+                <h1>CSS</h1>
+                <p>Style and layout of websites</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #f7df1e" class="fab fa-js-square"></i>
+              </div>
+              <div class="info">
+                <h1>JavaScript</h1>
+                <p>Interactive behavior of websites</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #61dafb" class="fab fa-react"></i>
+              </div>
+              <div class="info">
+                <h1>React.js</h1>
+                <p>Build dynamic web applications</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i
+                  style="color: #000"
+                  class="fas fa-arrow-alt-circle-right"
+                ></i>
+              </div>
+              <div class="info">
+                <h1>Next.js</h1>
+                <p>Optimized React framework for production</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Technologies -->
+          <div class="cards" data-name="back">
+            <div class="card">
+              <div class="icon">
+                <i style="color: #777bb3" class="fab fa-php"></i>
+              </div>
+              <div class="info">
+                <h1>PHP</h1>
+                <p>Backend server-side scripting language</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #47a248" class="fas fa-database"></i>
+              </div>
+              <div class="info">
+                <h1>MongoDB</h1>
+                <p>NoSQL database for scalable applications</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #2d3748" class="fas fa-tools"></i>
+              </div>
+              <div class="info">
+                <h1>Prisma</h1>
+                <p>Modern database toolkit for TypeScript and Node.js</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- UI/UX Design Tools -->
+          <div class="cards" data-name="ui">
+            <div class="card">
+              <div class="icon">
+                <i style="color: #f24e1e" class="fas fa-pencil-alt"></i>
+              </div>
+              <div class="info">
+                <h1>Figma</h1>
+                <p>Design tool for interface design and prototyping</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #000" class="fas fa-vector-square"></i>
+              </div>
+              <div class="info">
+                <h1>Sketch</h1>
+                <p>Design tool for creating digital interfaces</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #ff0000" class="fab fa-adobe"></i>
+              </div>
+              <div class="info">
+                <h1>Adobe XD</h1>
+                <p>Design and prototype user experiences</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Development -->
+          <div class="cards" data-name="game">
+            <div class="card">
+              <div class="icon">
+                <i style="color: #004d3d" class="fas fa-code"></i>
+              </div>
+              <div class="info">
+                <h1>C++</h1>
+                <p>Programming language used for game engines</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #178c4a" class="fas fa-gamepad"></i>
+              </div>
+              <div class="info">
+                <h1>C#</h1>
+                <p>Game development with Unity engine</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #306998" class="fab fa-python"></i>
+              </div>
+              <div class="info">
+                <h1>Python</h1>
+                <p>Game development using frameworks like Pygame</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Technologies -->
+          <div class="cards" data-name="mobile">
+            <div class="card">
+              <div class="icon">
+                <i style="color: #61dafb" class="fab fa-react"></i>
+              </div>
+              <div class="info">
+                <h1>React Native</h1>
+                <p>Build mobile apps using React for iOS and Android</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #02569b" class="fab fa-google"></i>
+              </div>
+              <div class="info">
+                <h1>Flutter</h1>
+                <p>Cross-platform mobile app development using Dart</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #fa7343" class="fab fa-apple"></i>
+              </div>
+              <div class="info">
+                <h1>Swift</h1>
+                <p>Native iOS app development with Apple's language</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #3ddc84" class="fab fa-android"></i>
+              </div>
+              <div class="info">
+                <h1>Kotlin</h1>
+                <p>Modern Android app development with Kotlin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../scripts/programmers.js"></script>
+  </body>
+</html>
