@@ -4,24 +4,32 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   scroll-behavior: smooth;
-   color: var(--text-color);
-   font-family: "Poppins", sans-serif;
-   text-decoration: none;
-}
+   color: var(--text-color) ;
 
-:root {
-   --main-color: #0c0f13;
+  }
+  html{
+   scroll-behavior: smooth;
+
+  }
+  
+  a{
+    text-decoration: none !important;
+  }
+  :root {
+    --main-color: #0c0f13;
    --secondly-color: #1b1b1b;
    --text-color: #fff;
    --bg-color: #204ba7;
-}
-body {
+  }
+  body {
    background-color: var(--main-color);
-}
+   font-family: "Poppins", sans-serif;
+    position: relative;
+  }
 section {
-   padding: 10px 10%;
+   padding: 50px 30px;
 }
+
 header {
    padding: 0 5%;
    .container {
@@ -41,15 +49,14 @@ header {
          }
       }
       .nav-container {
-         display: flex;
          gap: 20px;
          nav {
+           
             opacity: 0.8;
             display: flex;
             gap: 20px;
             .Active {
                opacity: 100%;
-               transform: scale(1.1) translateY(-3px);
                color: var(--bg-color);
             }
             a {
@@ -58,8 +65,9 @@ header {
             }
             a:hover {
                transform: scale(1.07) translateY(-3px);
-               color: var(--bg-color)
-            }
+               color: var(--bg-color);
+            
+              }
          }
          .btn-container {
             a {
@@ -83,7 +91,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
+      width:100%;
       .info{
          h1{
             margin-bottom: 20px;
@@ -95,7 +103,7 @@ header {
          p{
             padding-bottom: 30px;
             color: rgb(211, 211, 211);
-            width: 500px;
+            max-width: 100%;
             font-size: 15px;
 
          }
@@ -112,7 +120,6 @@ header {
                transition: all 0.6s;
             }
             a:hover {
-               
                transform: scale(0.8);
                color: var(--bg-color);
                border: 2px dotted var(--bg-color);
@@ -123,6 +130,9 @@ header {
       
       }
      .logo {
+       width: 100%;
+       display: flex;
+       justify-content: center;
          img {
             animation: up-and-down 10s linear infinite;
          }
@@ -130,30 +140,30 @@ header {
    }
 }
 .developers {
-   .container {
+  width: 100vw !important;
+  .container {
       border-bottom: 2px solid var(--secondly-color);
-      justify-content: center;
+      width: 80%;
+      margin: auto;
       .info {
          h3 {
             font-size: 32px;
+            width: 100%;
             margin-top: 30px;
             text-align: center;
          }
       }
       .cards {
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
          padding-bottom: 30px;
-         margin: 10px 12%;
          margin-top: 90px;
-         gap: 20px;
-         justify-content: center;
-         .card{
-            padding: 20px;
-            border-radius: 12px;
-            width: 250px;
-            height: 300px;
+         display: grid;
+         grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));
+         gap:40px;
+        .card{
+          padding: 12px 0;
+           border-radius: 12px;
             background-color: var(--secondly-color);
             text-align: center;
             align-items: center;
@@ -200,19 +210,16 @@ header {
          }
       }
       .cards {
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));
+         gap:40px;
          padding-bottom: 30px;
-         margin: 10px 0;
-         margin-top: 90px;
+          margin:90px auto;
+          width: 70%;
          gap: 20px;
-         justify-content: center;
          .card{
             padding: 20px;
             border-radius: 12px;
-            width: 250px;
-            height: 300px;
             background-color: var(--secondly-color);
             text-align: center;
             align-items: center;
@@ -250,6 +257,7 @@ header {
 .team {
    display: grid;
    padding-bottom: 40px;
+   
    .container {
       padding-bottom: 30px;
       border-bottom: 2px solid var(--secondly-color);
@@ -265,20 +273,44 @@ header {
    
       }
       .cards {
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         gap: 30px;
-         justify-content: center;
-         margin-top: 90px;
+        grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+        gap:40px;
+         display: grid;
+         margin: auto;
+         margin-top: 80px;
+         width: 80%;
          .card {
             display: flex;
             align-items: center;
+            flex-direction: column;
+            justify-content: center;
             gap: 20px;
-            img {
-               border-radius: 100%;
-               width: 200px;
+            margin-bottom: 40px;
+            border:1px solid #333;
+            border-radius: 12px;
+             .b-info   {
+               .social-link{
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                padding: 12px;
+              }
+              p{
+                max-width: 90%;
+                text-align: center;
+                margin: auto;
+              }
             }
+              .h-info{
+                text-align: center;
+                max-width: 100%;
+              }
+              img {
+               max-width: 100%;
+                border-radius: 12px;
+                margin-bottom: 12px;;
+              }
             
          }
          .info-container {
@@ -347,4 +379,126 @@ footer {
   100% { 
       bottom: 400px;
   }
+}
+
+
+
+::-webkit-scrollbar{
+  display: none
+}
+
+.toggle-menu{
+display: none
+}
+
+@media (max-width:767px){
+  
+  header{
+      position: relative;
+      width: 100vw;
+    }
+    .show{
+      display: flex !important;
+    }
+    
+    .hero{
+      width: 100vw;
+      
+      .info{
+        margin: auto;
+        width: 90vw;
+        .btn-container{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }        
+        h1{
+            font-size: 32px !important;
+          text-align: center;
+        }
+        p{
+          max-width: 90% !important;
+          line-height: 1.7;
+          text-align: center;
+          margin: auto;
+        }
+      }
+      .logo {
+        margin: auto;
+        width: 100vw ;
+
+        img{
+              max-width: 80%;
+          }
+    }
+  }
+
+    .nav-container{
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      top: 100%;
+      height: fit-content;
+      background: #000;      
+      width: 90% !important;
+      transition: .5s;
+      padding: 22px;
+      border-radius: 12px;
+      border: 1px solid #fff;
+      left: 50%;
+      transform: translateX(-50%);        
+      nav{
+          flex-direction: column;
+          width: 100%;
+          
+            a{
+              margin-bottom: 12px;
+            }
+
+        }
+        .btn-container{
+          padding: 12px 0 ;
+          
+        }
+
+    }
+    .toggle-menu{
+      font-size: 40px;
+      cursor: pointer;
+      display: initial !important
+    }
+    
+    
+
+}
+
+@media(min-width:767px){
+  .nav-container{
+    display: flex !important;
+  }
+
+  .developers .container .cards{
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media(max-width:992px){
+  .hero {
+    .container{
+      display: flex;
+      flex-direction: column;
+    
+      .logo{
+        order: -1;
+        
+      }
+    }
+}
+}
+
+@media(max-width:450px){
+  .nav-container{    
+    left: 50% !important;
+}
 }
