@@ -24,9 +24,10 @@
    background-color: var(--main-color);
    font-family: "Poppins", sans-serif;
     position: relative;
+    overflow-x: hidden;
   }
 section {
-   padding: 50px 9%;
+   padding: 50px 40px;
 }
 
 header {
@@ -464,6 +465,7 @@ display: none
       flex-direction: column;
       top: 100%;
       height: fit-content;
+      z-index: 900;
       background: #000;      
       width: 90% !important;
       transition: .5s;
