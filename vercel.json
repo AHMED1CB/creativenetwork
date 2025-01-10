@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/src/pages/about.html"
+    },
+    {
+     "source": "/designtechs",
+     "destination": "/src/pages/designers.html"
+   }, {
+     "source": "/programmingtechs",
+     "destination": "/src/pages/programmers.html"
+   }
+  
+]
+}
