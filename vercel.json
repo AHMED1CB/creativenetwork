@@ -6,7 +6,7 @@
     },
     {
       "source": "/about",
-      "destination": "/src/pages/about.html"
+      "destination": "src/pages/about.html"
     },
     {
      "source": "/designtechs",
