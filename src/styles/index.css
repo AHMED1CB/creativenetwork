@@ -319,13 +319,15 @@ header {
               {
                 display: inline;
                 text-align: center;
-                padding:4px;
+                padding:12px;
+
                 margin: 0 auto;
               }
             }
               .h-info{
                 text-align: center;
                 max-width: 100%;
+                margin: 12px 0;
               }
               img {
                max-width: 100%;

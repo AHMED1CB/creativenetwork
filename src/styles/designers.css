@@ -250,3 +250,27 @@ header {
      left: 50% !important;
  }
  }
+
+ 
+footer {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-color: #151a21;
+  padding: 80px 0;
+  margin-top: 40px;
+  h1 {
+     font-size: 32px;
+
+  }
+  p {
+     opacity: 0.6;
+     margin: 20px 0;
+  }
+  .social-container {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     font-size: 32px;
+  }
+}
