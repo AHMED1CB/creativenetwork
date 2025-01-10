@@ -18,6 +18,8 @@
 }
 body {
    background-color: var(--main-color);
+   overflow-x: hidden;
+
 }
 section {
    padding: 10px 10%;
