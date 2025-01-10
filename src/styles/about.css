@@ -414,7 +414,7 @@ footer {
        gap: 20px;
        font-size: 32px;
     }
-=======
+
    scroll-behavior: smooth;
    color: var(--text-color);
    font-family: "Poppins", sans-serif;
@@ -502,5 +502,4 @@ header {
    .nav-container{    
      left: 50% !important;
  }
->>>>>>> d76b206f1b43a9e920c91c933096679482bf6878
  }
