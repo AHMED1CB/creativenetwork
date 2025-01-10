@@ -15,6 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>شبكة الإبداع</title>
     <link rel="stylesheet" href="src/styles/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
@@ -42,16 +44,16 @@
 
     <section class="hero">
       <div class="container">
-        <div class="info">
-          <h1>تعلم البرمجة كما لم تفعل من قبل</h1>
-          <p>
+        <div class="info" > >
+          <h1 data-aos="fade-left">تعلم البرمجة كما لم تفعل من قبل</h1>
+          <p data-aos="fade-left">
             انطلق في رحلة تعلم البرمجة واكتساب المهارات اللازمة لتحقيق أحلامك المهنية.
           </p>
-          <div class="btn-container">
+          <div class="btn-container" data-aos="fade-up">
             <a>كورساتنا</a>
           </div>
         </div>
-        <div class="logo">
+        <div class="logo" data-aos="fade-right">
           <img src="public/imgs/logo.png" alt="شعار الموقع" />
         </div>
       </div>
@@ -63,7 +65,7 @@
           <h3>قسم البرمجة</h3>
         </div>
         <div class="cards">
-          <div class="card" id="card1">
+          <div class="card" id="card1" data-aos="fade-left">
             <div class="icon"><i class="ri-reactjs-line"></i></div>
             <div class="info">
               <h2>الواجهة الأمامية</h2>
@@ -77,7 +79,7 @@
               <i class="ri-star-s-fill"></i>
             </div>
           </div>
-          <div class="card" id="card2">
+          <div class="card" data-aos="fade-down" id="card2">
             <div class="icon"><i class="ri-database-2-fill"></i></div>
             <div class="info">
               <h2>الواجهة الخلفية</h2>
@@ -91,7 +93,7 @@
               <i class="ri-star-s-fill"></i>
             </div>
           </div>
-          <div class="card" id="card3">
+          <div class="card" id="card3" data-aos="fade-right">
             <div class="icon"><i class="ri-pen-nib-line"></i></div>
             <div class="info">
               <h2>تصميم واجهات المستخدم</h2>
@@ -115,7 +117,7 @@
           <h3>قسم التصميم</h3>
         </div>
         <div class="cards">
-          <div class="card">
+          <div class="card" data-aos="fade-left" >
             <div class="icon"><i class="ri-reactjs-line"></i></div>
             <div class="info">
               <h2>تصميم الجرافيك</h2>
@@ -129,7 +131,7 @@
               <i class="ri-star-s-fill"></i>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-down">
             <div class="icon"><i class="ri-database-2-fill"></i></div>
             <div class="info">
               <h2>الموشن جرافيك</h2>
@@ -143,7 +145,7 @@
               <i class="ri-star-s-fill"></i>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <div class="icon"><i class="ri-pen-nib-line"></i></div>
             <div class="info">
               <h2>تصميم 2D/3D</h2>
@@ -168,7 +170,7 @@
           <h4>فريق محترف يعمل لتحقيق الأفضل.</h4>
         </div>
         <div class="cards">
-          <div class="card">
+          <div class="card" data-aos="fade-left">
             <img src="public/imgs/_.jpeg" alt="">
             <div class="info-container">
               <div class="h-info">
@@ -185,7 +187,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <img src="public/imgs/_.jpeg" alt="">
             <div class="info-container">
               <div class="h-info">
@@ -202,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="public/imgs/_.jpeg" alt="">
             <div class="info-container">
               <div class="h-info">
@@ -232,13 +234,17 @@
           <a href=""><i class="ri-discord-fill"></i></a>
       </div>
   </footer>
-
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       const menu = document.querySelector(".nav-container");
       function toggle() {
         menu.classList.toggle("show");
       }
+      AOS.init();
+
     </script>
-    <script type="module" src="src/scripts/index.js"></script>
+
+<script type="module" src="src/scripts/index.js"></script>
   </body>
 </html>
