@@ -9,7 +9,6 @@
   }
   html{
    scroll-behavior: smooth;
-
   }
   
   a{
@@ -27,7 +26,7 @@
     position: relative;
   }
 section {
-   padding: 50px 30px;
+   padding: 50px 9%;
 }
 
 header {
@@ -95,7 +94,6 @@ header {
       .info{
          h1{
             margin-bottom: 20px;
-
             font-size: 50px;
             color: azure;
             font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
@@ -140,64 +138,80 @@ header {
    }
 }
 .developers {
-  width: 100vw !important;
-  .container {
-      border-bottom: 2px solid var(--secondly-color);
-      width: 80%;
-      margin: auto;
-      .info {
-         h3 {
-            font-size: 32px;
-            width: 100%;
-            margin-top: 30px;
-            text-align: center;
+   /* opacity: 0; /* Hide initially */
+   /* transform: translateY(50px); Initial position */ 
+   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+ 
+   .container {
+     margin-top: 40px;
+     border-bottom: 2px solid var(--secondly-color);
+     width: 100%;
+ 
+     .info {
+       text-align: center;
+ 
+       h3 {
+         font-size: 32px;
+         width: 100%;
+         margin-top: 30px;
+         margin: 40px 0;
+       }
+     }
+ 
+     .cards {
+       width: 100%;
+       margin: auto;
+       padding-bottom: 30px;
+       margin-top: 90px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 40px;
+ 
+       .card {
+         padding: 12px 0;
+         width: 250px;
+         height: 250px;
+         border-radius: 12px;
+         background-color: var(--secondly-color);
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+         transition: all 0.4s;
+ 
+         .icon {
+           i {
+             font-size: 52px;
+           }
          }
-      }
-      .cards {
-        width: 100%;
-        margin: auto;
-         padding-bottom: 30px;
-         margin-top: 90px;
-         display: grid;
-         grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));
-         gap:40px;
-        .card{
-          padding: 12px 0;
-           border-radius: 12px;
-            background-color: var(--secondly-color);
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.4s;
-            .icon {
-               i {
-                     font-size: 52px;
-            }
-         }
+ 
          .info {
-            h2 {
-               margin: 10px 0;
-            }
+           h2 {
+             margin: 10px 0;
+           }
          }
+ 
          .stars {
-            display: flex;
-            justify-content: center;
-            margin: 30px 0;
-            i {
-
-               font-size: 27px;
-               color: #dd641e;
-               
-            }
+           display: flex;
+           justify-content: center;
+           margin: 30px 0;
+ 
+           i {
+             font-size: 27px;
+             color: #dd641e;
+           }
          }
-      }
-      .card:hover {
-         transform: scale(1.1);
-      }
+ 
+         &:hover {
+           transform: scale(1.1);
+         }
+       }
+     }
    }
-}
-}
+ }
+ 
 .designers {
    .container {
       border-bottom: 2px solid var(--secondly-color);
@@ -273,17 +287,22 @@ header {
    
       }
       .cards {
-        grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
-        gap:40px;
-         display: grid;
+         gap:40px;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
          margin: auto;
          margin-top: 80px;
          width: 80%;
          .card {
             display: flex;
+            width: 360px;
+            width: 290px;
             align-items: center;
             flex-direction: column;
             justify-content: center;
+            text-align: center;
             gap: 20px;
             margin-bottom: 40px;
             border:1px solid #333;
@@ -296,10 +315,12 @@ header {
                 justify-content: center;
                 padding: 12px;
               }
-              p{
-                max-width: 90%;
+              p
+              {
+                display: inline;
                 text-align: center;
-                margin: auto;
+                padding:4px;
+                margin: 0 auto;
               }
             }
               .h-info{
@@ -392,7 +413,9 @@ display: none
 }
 
 @media (max-width:767px){
-  
+   section {
+      padding: 0;
+   }
   header{
       position: relative;
       width: 100vw;
@@ -403,7 +426,7 @@ display: none
     
     .hero{
       width: 100vw;
-      
+       margin-top: 0;
       .info{
         margin: auto;
         width: 90vw;
@@ -498,6 +521,9 @@ display: none
 }
 
 @media(max-width:450px){
+   section {
+      padding: 0;
+   }
   .nav-container{    
     left: 50% !important;
 }

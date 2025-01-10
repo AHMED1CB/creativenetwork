@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/programmers.css" />
+    <link rel="stylesheet" href="../styles/designers.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -20,11 +20,14 @@
         <div class="logo">
           <img src="../../public/imgs/logo.png" alt="" />
         </div>
+        <div class="toggle-menu">
+          <i class="ri-menu-line" onclick="toggle()"></i>
+        </div>
         <div class="nav-container">
           <nav>
-            <a href="../../">Home</a>
-            <a class="Active" href="">Programmers</a>
-            <a href="">designers</a>
+            <a href="../../index.html">Home</a>
+            <a class="" href="programmers.html">Programmers</a>
+            <a class="Active" href="designers.html">designers</a>
             <a href="">About</a>
           </nav>
           <div class="btn-container">
@@ -33,22 +36,135 @@
         </div>
       </div>
     </header>
-    <div class="design-hero">
+    <section class="design-hero">
       <div class="container">
-         <div class="btns-active">
-         <button class="select-btns active" data-name="all">All</button>
-         <button class="select-btns" data-name="front">Front-End</button>
-         <button class="select-btns" data-name="back">Back-end</button>
-         <button class="select-btns" data-name="ui">Ui/Ux</button>
-         <button class="select-btns" data-name="game">Game dev</button>
-         <button class="select-btns" data-name="mobile">Mobile dev</button>
-         </div>
-         <div class="cards-container">
-            <div class="cards" data-name="front">
-               
+        <div class="btns-active">
+          <button class="select-btns active" data-name="all">All</button>
+          <button class="select-btns" data-name="ui">UI Design</button>
+          <button class="select-btns" data-name="ux">UX Design</button>
+          <button class="select-btns" data-name="graphic">
+            Graphic Design
+          </button>
+          <button class="select-btns" data-name="illustration">
+            Illustration
+          </button>
+        </div>
+        <div class="cards-container">
+          <!-- UI Design Cards -->
+          <div class="cards" data-name="ui">
+            <div class="card">
+              <div class="icon">
+                <i style="color: #007bff" class="ri-layout-line card-icon"></i>
+              </div>
+              <h3>Website UI Design</h3>
+              <p>Creating intuitive and visually appealing web interfaces.</p>
             </div>
-         </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #17a2b8" class="ri-mobile-line card-icon"></i>
+              </div>
+              <h3>Mobile UI Design</h3>
+              <p>Designing seamless and engaging interfaces for mobile apps.</p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i
+                  style="color: #6f42c1"
+                  class="ri-dashboard-line card-icon"
+                ></i>
+              </div>
+              <h3>Dashboard UI</h3>
+              <p>
+                Optimizing dashboards for better data visualization and
+                usability.
+              </p>
+            </div>
+          </div>
+
+          <!-- UX Design Cards -->
+          <div class="cards" data-name="ux">
+            <div class="card">
+              <div class="icon">
+                <i
+                  style="color: #28a745"
+                  class="ri-user-smile-line card-icon"
+                ></i>
+              </div>
+              <h3>User Research</h3>
+              <p>Conducting research to understand user needs and behaviors.</p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #ffc107" class="ri-focus-2-line card-icon"></i>
+              </div>
+              <h3>Interaction Design</h3>
+              <p>Designing smooth and effective user interactions.</p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i
+                  style="color: #dc3545"
+                  class="ri-flow-chart-line card-icon"
+                ></i>
+              </div>
+              <h3>Prototyping</h3>
+              <p>Creating prototypes to test and refine design ideas.</p>
+            </div>
+          </div>
+
+          <!-- Graphic Design Cards -->
+          <div class="cards" data-name="graphic">
+            <div class="card">
+              <div class="icon">
+                <i style="color: #fd7e14" class="ri-brush-line card-icon"></i>
+              </div>
+              <h3>Logo Design</h3>
+              <p>Crafting unique and memorable logos for brands.</p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #e83e8c" class="ri-image-line card-icon"></i>
+              </div>
+              <h3>Poster Design</h3>
+              <p>Designing creative posters for events and campaigns.</p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #ffc107" class="ri-paint-fill card-icon"></i>
+              </div>
+              <h3>Brand Identity</h3>
+              <p>Building cohesive visual identities for businesses.</p>
+            </div>
+          </div>
+
+          <!-- Illustration Cards -->
+          <div class="cards" data-name="illustration">
+            <div class="card">
+              <div class="icon">
+                <i style="color: #20c997" class="ri-pencil-line card-icon"></i>
+              </div>
+              <h3>Digital Illustration</h3>
+              <p>Creating stunning digital artwork for various media.</p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #6610f2" class="ri-book-line card-icon"></i>
+              </div>
+              <h3>Book Illustration</h3>
+              <p>Designing captivating illustrations for books and stories.</p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i style="color: #fd7e14" class="ri-sketch-line card-icon"></i>
+              </div>
+              <h3>Concept Art</h3>
+              <p>Visualizing creative concepts for games and movies.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+    <script  type="module" src="../scripts/designers.js"></script>
+
   </body>
 </html>

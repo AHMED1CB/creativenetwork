@@ -85,6 +85,7 @@ header {
        margin-top: 4%;
          .btns-active {
             display: flex;
+            padding-bottom: 20px;
             gap: 5px;
             margin-bottom: 30px;
             border-bottom: 2px solid var(--secondly-color);

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Kufi+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   color: var(--text-color);
+   font-family: "Poppins", sans-serif;
+   text-decoration: none;
+}
+
+:root {
+   --main-color: #0c0f13;
+   --secondly-color: #1b1b1b;
+   --text-color: #fff;
+   --bg-color: #204ba7;
+}
+body {
+   background-color: var(--main-color);
+}
+section {
+   padding: 10px 10%;
+}
+
+
+.toggle-menu{
+      display: none
+      }
+ 
+header {
+      padding: 0 5%;
+      .container {
+         padding: 20px 0;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .logo {
+            display: flex;
+            gap: 10px;
+            img {
+               width: 50px;
+            }
+            h3 {
+               opacity: 0.9;
+            }
+         }
+         .nav-container {
+            gap: 20px;
+            nav {
+              
+               opacity: 0.8;
+               display: flex;
+               gap: 20px;
+               .Active {
+                  opacity: 100%;
+                  color: var(--bg-color);
+               }
+               a {
+                  font-weight: 500;
+                  transition: all 0.6s;
+               }
+               a:hover {
+                  transform: scale(1.07) translateY(-3px);
+                  color: var(--bg-color);
+               
+                 }
+            }
+            .btn-container {
+               a {
+                  padding: 10px 20px;
+                  background-color: var(--bg-color);
+                  border-radius: 4px;
+               }
+            }
+         }
+         
+      }
+     
+   }
+.design-hero {
+   .container {
+      display: flex;
+      flex-direction: column;
+       margin-top: 4%;
+         .btns-active {
+            display: flex;
+            padding-bottom: 20px;
+            gap: 5px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--secondly-color);
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            button {
+               color: var(--bg-color);
+               background-color: var(--text-color);
+               padding: 4px 5px;
+               border-radius: 4px;
+               border: 0;
+               font-weight: 600;
+               cursor: pointer;
+               transition: all 0.2s;
+            }
+            button:hover, .active {
+               color: var(--text-color);
+               background-color: var(--bg-color);
+            }
+           
+         }
+         .cards-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            .cards {
+               display: grid;
+               grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));
+               gap: 20px;
+              width: 100%;
+              
+              .card {
+                  height: 250px;
+                  background-color: var(--secondly-color);
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                  box-shadow: 0 0 5px 1px var(--bg-color);
+                  border-radius: 5px;
+                  transition: transform 0.3s, box-shadow 0.3s;
+                  .icon {
+                     font-size: 62px;
+                     margin-bottom: 10px;
+                        i {
+                           color:inherit
+                     }
+                  }
+                  
+   
+               }
+               .card:hover {
+                  transform: translateY(-5px); /* Subtle hover lift effect */
+                  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+               }
+
+            }
+            .invisible {
+               display: none;
+            }
+         }
+        
+   }
+}
+
+@media (max-width:767px){
+  
+   header{
+       position: relative;
+       width: 100vw;
+     }
+     .show{
+       display: flex !important;
+     }
+     
+     .hero{
+       width: 100vw;
+       
+       .info{
+         margin: auto;
+         width: 90vw;
+         .btn-container{
+           width: 100%;
+           display: flex;
+           justify-content: center;
+         }        
+         h1{
+             font-size: 32px !important;
+           text-align: center;
+         }
+         p{
+           max-width: 90% !important;
+           line-height: 1.7;
+           text-align: center;
+           margin: auto;
+         }
+       }
+       .logo {
+         margin: auto;
+         width: 100vw ;
+ 
+         img{
+               max-width: 80%;
+           }
+     }
+   }
+ 
+     .nav-container{
+       display: none;
+       position: absolute;
+       flex-direction: column;
+       top: 100%;
+       height: fit-content;
+       background: #000;      
+       width: 90% !important;
+       transition: .5s;
+       padding: 22px;
+       border-radius: 12px;
+       border: 1px solid #fff;
+       left: 50%;
+       transform: translateX(-50%);        
+       nav{
+           flex-direction: column;
+           width: 100%;
+           
+             a{
+               margin-bottom: 12px;
+             }
+ 
+         }
+         .btn-container{
+           padding: 12px 0 ;
+           
+         }
+ 
+     }
+     .toggle-menu{
+       font-size: 40px;
+       cursor: pointer;
+       display: initial !important
+     }
+     
+     
+ 
+ }
+ 
+ @media(min-width:767px){
+   .nav-container{
+     display: flex !important;
+   }
+ }
+ 
+ 
+ @media(max-width:450px){
+   .nav-container{    
+     left: 50% !important;
+ }
+ }
