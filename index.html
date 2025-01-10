@@ -33,11 +33,11 @@
         </div>
         <div class="nav-container">
           <nav>
-          <a class="Active" href="">Home</a>
+          <a class="Active" href="#">Home</a>
           <a href="src/pages/programmers.html">Programmers</a>
           <a href="src/pages/designers.html">designers</a>
           <a href="#team">Team</a>
-          <a href="src/pages/about.html">About</a>
+          <a href="/src/pages/about.html">About</a>
         </nav>
         <div class="btn-container">
           <a href="#">Login</a>
@@ -255,6 +255,13 @@
           <a href=""><i class="ri-discord-fill"></i></a>
         </div>
     </footer>
+    <script type="text/javascript">
+      const menu = document.querySelector('.nav-container');
+
+function toggle(){
+     menu.classList.toggle('show');
+}
+    </script>
     <script type="module" src="/src/scripts/index.js"></script>
   </body>
 </html>

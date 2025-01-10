@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CreativeNetwork</title>
+    <link rel="stylesheet" type="text/css" href="/src/styles/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Naskh+Arabic:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Naskh+Arabic:wght@400..700&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+        <header>
+                <div class="container">
+                  <div class="logo">
+                    <img src="/public/imgs/logo.png" alt="" />
+                  </div>
+                  <div class="toggle-menu">
+                    <i class="ri-menu-line" onclick="toggle()"></i>
+                  </div>
+                  <div class="nav-container">
+                    <nav>
+                    <a  href="/">Home</a>
+                    <a href="/src/pages/programmers.html">Programmers</a>
+                    <a href="#">designers</a>
+                    <a class="Active" href="#">About</a>
+                  </nav>
+                  <div class="btn-container">
+                    <a href="#">Login</a>
+                  </div>
+                </div>
+                </div>
+              </header>
+          
+    <section class="about-section">
+        <div class="about-header">
+            <h1>About CreativeNetwork</h1>
+            <p>CreativeNetwork is your gateway to mastering programming and joining a vibrant global tech community.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon"><i class="ri-rocket-line"></i></div>
+                <h3 class="feature-title">High-Quality Courses</h3>
+                <p class="feature-text">Our courses are designed by experts to inspire and educate.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon"><i class="ri-earth-line"></i></div>
+                <h3 class="feature-title">Global Reach</h3>
+                <p class="feature-text">Connect with learners and experts worldwide.</p>
+            </div>
+        </div>
+
+        <div class="choose-us">
+            <h2>Why Choose Us?</h2>
+            <div class="choose-items">
+                <div class="choose-item">
+                    <h3>Trusted by Thousands</h3>
+                    <p>Join thousands of learners already benefiting from our platform.</p>
+                </div>
+                <div class="choose-item">
+                    <h3>Constant Updates</h3>
+                    <p>Our content is always updated to stay relevant in the fast-changing tech world.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h2>What Our Learners Say</h2>
+            <div class="testimonial">
+                <p>"CreativeNetwork helped me land my first developer job! Highly recommended."</p>
+                <span>- Alex Johnson</span>
+            </div>
+        </div>
+
+        <div class="vision-values">
+            <h2>Our Vision & Values</h2>
+            <p>We aim to make programming accessible and foster innovation worldwide.</p>
+            <ul>
+                <li>Innovation</li>
+                <li>Accessibility</li>
+                <li>Community</li>
+                <li>Excellence</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+            <h1>CreativeNetwork</h1>
+            <p> for learning new technologies Lorem ipsum dolor sit.</p>
+            <div class="social-container">
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""><i class="ri-github-fill"></i></a>
+              <a href=""><i class="ri-discord-fill"></i></a>
+            </div>
+        </footer>
+    <script>
+      const menu = document.querySelector('.nav-container');
+
+function toggle(){
+     menu.classList.toggle('show');
+}
+    </script>
+</body>
