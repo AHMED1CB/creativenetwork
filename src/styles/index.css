@@ -28,6 +28,8 @@
   }
 section {
    padding: 50px 40px;
+   overflow-x: hidden;
+
 }
 
 header {
