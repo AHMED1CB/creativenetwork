@@ -1,23 +1,3 @@
-import {gsap} from "gsap";
-console.log(gsap);
-// Example Animation
-gsap.to(".card", {
-  duration: 1,
-  y: -50,
-  opacity: 1,
-  stagger: 0.2,
-});
-gsap.from(".design-hero", {
-   x: -500,
-   opacity: 0,
-   stagger: 0.2,
-})
-gsap.to(".design-hero",{
-   duration: 2,
-   x: 0,
-   opacity: 1,
-   stagger: 0.2,
-})
 const btns = document.querySelectorAll(".select-btns");
 const cardContainers = document.querySelectorAll(".cards");
 console.log(btns);
